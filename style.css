@@ -334,6 +334,13 @@ main p {
   text-decoration: none;
 }
 
+.blog-link {
+  color: #0b57d0;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
 .github-link {
   display: inline-flex;
   align-items: center;
