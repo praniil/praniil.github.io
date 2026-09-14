@@ -91,63 +91,74 @@
       <section id="projects" class="projects-section">
         <h2>Selected Projects</h2>
         <div class="project-list">
-          <div class="project-item">
-            <span>Flow Model Implementation</span>
-            <a href="https://github.com/praniil/flow-model" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
-              <img src="photos/github.svg" alt="GitHub" class="icon small-icon" />
-            </a>
-          </div>
-          <div class="project-item">
-            <span>Content Retrieval Engine</span>
-            <a href="https://github.com/praniil/content-retrieval-engine-cpp" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
-              <img src="photos/github.svg" alt="GitHub" class="icon small-icon" />
-            </a>
-          </div>
-          <div class="project-item">
-            <span>RAG Implementation</span>
-            <a href="https://github.com/praniil/rag-implementation" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
-              <img src="photos/github.svg" alt="GitHub" class="icon small-icon" />
-            </a>
-          </div>
-          <div class="project-item">
-            <span>Auto Encoder Implementation in PyTorch</span>
-            <a href="https://github.com/praniil/autoencoder-pytorch" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
-              <img src="photos/github.svg" alt="GitHub" class="icon small-icon" />
-            </a>
-          </div>
-          <div class="project-item">
+            <div class="project-item">
             <span>Face Recognition Attendance System</span>
+            <div>Python · PyTorch · MTCNN · FaceNet · OpenCV · PostgreSQL</div>
+            <p>Built a real-time face recognition attendance system using MTCNN for face detection, landmark-based alignment for pose normalization, and FaceNet for 512-dimensional face embeddings. Implemented dual-threshold Euclidean and cosine similarity matching with CUDA acceleration, and integrated PostgreSQL for persistent storage of student records and face encodings.</p>
             <a href="https://github.com/praniil/face-recognition-system" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
               <img src="photos/github.svg" alt="GitHub" class="icon small-icon" />
             </a>
           </div>
           <div class="project-item">
             <span>Interactive Chatbot for Mental Well-being</span>
+            <div>Python · PyTorch · Hugging Face · React (TypeScript) · Flask · PostgreSQL</div>
+            <p>
+                Fine-tuned a 124M-parameter GPT-2 model on 45K conversational samples to generate context-aware responses, evaluating generation quality with BLEU and ROUGE metrics. Integrated the model into a full-stack chatbot with React, Flask, JWT authentication, PostgreSQL-backed analytics, and user feedback for tracking response quality.
+            </p>
             <a href="https://github.com/praniil/THA-minor-project" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
               <img src="photos/github.svg" alt="GitHub" class="icon small-icon" />
             </a>
           </div>
           <div class="project-item">
+            <span>Flow Model Implementation</span>
+            <div>Python · PyTorch · Matplotlib · Probabilistic Distribution</div>
+            <p>Implemented a Flow Matching generative model that learns a velocity field to transport samples from a Gaussian noise distribution to a target data distribution along straight-line paths. Trained an MLP to predict the required velocity at each timestep and used numerical ODE integration to generate samples from noise</p>
+            <a href="https://github.com/praniil/flow-model" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
+              <img src="photos/github.svg" alt="GitHub" class="icon small-icon" />
+            </a>
+          </div>
+          <div class="project-item">
+            <span>Content Retrieval Engine</span>
+            <div>C++ · Searching · Indexing · Data Structures</div>
+            <p>Built a mini content retrieval engine in C++ using TF-IDF to rank documents by their relevance to a search query. Implemented text preprocessing, positional inverted indexing, TF-IDF scoring, and query-based document ranking from scratch.</p>
+            <a href="https://github.com/praniil/content-retrieval-engine-cpp" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
+              <img src="photos/github.svg" alt="GitHub" class="icon small-icon" />
+            </a>
+          </div>
+          <div class="project-item">
+            <span>RAG Implementation</span>
+            <div>Python · PyTorch · Hugging Face Transformers · LangChain · Ollama (Qwen2.5)</div>
+            <p>Built a complete Retrieval-Augmented Generation (RAG) pipeline from scratch, combining token-aware document chunking, dense transformer embeddings, and cosine-similarity retrieval to find relevant context. Integrated a local Qwen2.5 LLM through Ollama and LangChain to generate responses grounded in the retrieved documents.</p>
+            <a href="https://github.com/praniil/rag-implementation" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
+              <img src="photos/github.svg" alt="GitHub" class="icon small-icon" />
+            </a>
+          </div>
+          <div class="project-item">
+            <span>Auto Encoder Implementation in PyTorch</span>
+            <div>Python · Pytorch · Latent Space · Neural Network</div>
+            <p>Implemented a fully connected autoencoder in PyTorch from scratch for MNIST, using a 784→128 latent representation and MSE reconstruction loss with Adam optimization and early stopping. Compared the custom layer-by-layer implementation with a PyTorch Sequential-based autoencoder using reconstruction metrics (MSE, MAE, PSNR), parameter counts, inference time, and visual reconstructions.</p>
+            <a href="https://github.com/praniil/autoencoder-pytorch" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
+              <img src="photos/github.svg" alt="GitHub" class="icon small-icon" />
+            </a>
+          </div>
+          
+          <div class="project-item">
             <span>Demon War: 2D Action Game</span>
+            <div>Rust</div>
+            <p>
+                Built a 2D action game in Rust from scratch, implementing the game loop, collision detection, sprite management, and player combat systems. Developed multiple player abilities and weapons alongside distinct enemy AI behaviors, including melee attacks, charging, and immobilization mechanics.
+            </p>
             <a href="https://github.com/praniil/demon-war" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
               <img src="photos/github.svg" alt="GitHub" class="icon small-icon" />
             </a>
           </div>
           <div class="project-item">
             <span>Physics-Based 2D Golf Game</span>
+            <div>C++ · SFML</div>
+            <p>
+                Built a physics-based golf game in C++ with SFML, implementing drag-to-aim controls and ball trajectory simulation under environmental effects such as wind, water, and sand.
+            </p>
             <a href="https://github.com/praniil/golf_game" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
-              <img src="photos/github.svg" alt="GitHub" class="icon small-icon" />
-            </a>
-          </div>
-          <div class="project-item">
-            <span>Sorting Algorithm Visualizer</span>
-            <a href="https://github.com/praniil/Sorting_Algorithm_Visualizer" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
-              <img src="photos/github.svg" alt="GitHub" class="icon small-icon" />
-            </a>
-          </div>
-          <div class="project-item">
-            <span>Finance Tracker</span>
-            <a href="https://github.com/praniil/financetracker" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
               <img src="photos/github.svg" alt="GitHub" class="icon small-icon" />
             </a>
           </div>
@@ -159,6 +170,9 @@
         <div class="project-list">
           <div class="project-item">
             <span>Content Retrieval Engine: A Mini Search Engine using TF-IDF Relevance Score in C++</span>
+            <div>
+                This blog walks through the development of a mini search engine in C++, covering how text is processed, indexed, scored using TF-IDF, and ranked to return relevant documents.
+            </div>
             <a href="https://medium.com/@praniil/content-retrieval-engine-a-mini-search-engine-created-using-tf-idf-relevance-score-in-c-d8dc07ecd5d5" target="_blank" rel="noopener" aria-label="Medium article">Link</a>
           </div>
         </div>
