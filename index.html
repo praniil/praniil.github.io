@@ -48,17 +48,32 @@
       <section>
         <h2>Research Experience</h2>
         <div class="research-list">
-          <div class="research-item">
-            <span>Kathmandu Valley Satellite Image Segmentation</span>
-            <a href="https://github.com/praniil/satellite-image-segmentation" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
-              <img src="photos/github.svg" alt="GitHub" class="icon small-icon" />
-            </a>
+          <div class="research-entry">
+            <div class="research-header">
+              <span class="research-title">Kathmandu Valley Satellite Image Segmentation</span>
+              <a href="https://github.com/praniil/satellite-image-segmentation" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
+                <img src="photos/github.svg" alt="GitHub" class="icon small-icon" />
+              </a>
+            </div>
+            <div class="research-meta">2025</div>
+            <div class="research-meta">Python · PyTorch · SegFormer · Stable Diffusion · ControlNet · Hugging Face · CVAT</div>
+            <p>
+              Created a 1,224-pair hand-annotated satellite dataset of Kathmandu Valley across seven land-use classes. Developed TC-SegFormer, a custom SegFormer variant combining CSA reweighting and topology-aware soft-clDice loss, improving validation mIoU from 0.466 to 0.558. Built a ControlNet-guided Stable Diffusion pipeline to generate synthetic satellite image–mask pairs targeting underrepresented land-use classes, and evaluated their impact on downstream semantic segmentation performance. Benchmarked five segmentation architectures using spatial block and random splits with three-fold cross-validation.
+            </p>
           </div>
-          <div class="research-item">
-            <span>ControlNet + Stable Diffusion - Smart City Generation</span>
-            <a href="https://github.com/praniil/Stable-diffusion-with-control-net" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
-              <img src="photos/github.svg" alt="GitHub" class="icon small-icon" />
-            </a>
+
+          <div class="research-entry">
+            <div class="research-header">
+              <span class="research-title">ControlNet + Stable Diffusion, Smart City Generation</span>
+              <a href="https://github.com/praniil/Stable-diffusion-with-control-net" target="_blank" rel="noopener" aria-label="GitHub" class="github-link">
+                <img src="photos/github.svg" alt="GitHub" class="icon small-icon" />
+              </a>
+            </div>
+            <div class="research-meta">2025</div>
+            <div class="research-meta">Python · Stable Diffusion · ControlNet · Diffusers · PyTorch</div>
+            <p>
+              Built a generative pipeline combining ControlNet and Stable Diffusion to synthesize realistic smart-city satellite imagery conditioned on segmentation masks and text prompts. The system supports configurable inference with DPM++2M and Euler schedulers, LoRA weights, 2× upscaling, batch processing, and a low-VRAM mode for constrained GPUs, alongside a spatial coverage analysis module and CLI documentation for usage.
+            </p>
           </div>
         </div>
       </section>
