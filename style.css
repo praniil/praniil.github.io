@@ -36,6 +36,13 @@ nav {
   vertical-align: middle;
 }
 
+.social-links .icon-link:nth-child(4) img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  display: block;
+}
+
 .small-icon {
   width: 15px;
   height: 15px;
