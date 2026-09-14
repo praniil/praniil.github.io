@@ -6,12 +6,16 @@ html, body {
 body {
   max-width: none;
   font-family: "Times New Roman", Times, serif;
-  line-height: 1.7;
+  line-height: 1.65;
   color: #111827;
   background: #ffffff;
+  font-size: 15px;
 }
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -41,13 +45,42 @@ nav {
   text-decoration: none;
 }
 
-.resume-link {
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  color: #111827;
   font-size: 0.9rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #111827;
   text-decoration: none;
+  line-height: 1.2;
+  transition: opacity 0.2s ease;
+}
+
+.nav-button:hover,
+.nav-button:focus,
+.brand:hover,
+.brand:focus {
+  background: transparent;
+  border-color: transparent;
+  color: #0b3d91;
+  text-decoration: none;
+}
+
+.resume-button {
+  background: transparent;
 }
 
 .icon {
@@ -68,8 +101,8 @@ nav {
   object-fit: contain;
 }
 .social-links .icon-link:nth-child(4) img {
-  width: 98px;
-  height: 98px;
+  width: 18px;
+  height: 18px;
   object-fit: contain;
   display: block;
 }
@@ -95,7 +128,7 @@ nav {
 }
 
 .brand {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: -0.03em;
 }
@@ -139,12 +172,12 @@ section {
 }
 
 .profile-photo {
-  width: 150px;
-  height: 150px;
+  width: 132px;
+  height: 132px;
   object-fit: cover;
   border-radius: 50%;
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   border: 1px solid rgba(17, 24, 39, 0.08);
 }
 
@@ -162,8 +195,8 @@ footer {
 }
 
 h1 {
-  margin-bottom: 12px;
-  font-size: clamp(2.3rem, 4vw, 3rem);
+  margin-bottom: 10px;
+  font-size: clamp(2.1rem, 3.5vw, 2.6rem);
   line-height: 1.08;
   letter-spacing: -0.06em;
   font-weight: 700;
@@ -171,7 +204,7 @@ h1 {
 
 h2 {
   margin-bottom: 6px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #111827;
   font-weight: 700;
 }
@@ -179,6 +212,7 @@ h2 {
 p,
 li {
   color: #2c2f35;
+  font-size: 0.97rem;
 }
 
 .social-links {
@@ -195,11 +229,14 @@ li {
   text-decoration: none;
 }
 
-.social-links a:hover,
 .nav-right a:hover,
+.nav-button:hover,
 .brand:hover,
+.nav-right a:focus,
+.nav-button:focus,
+.brand:focus,
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 main p {
