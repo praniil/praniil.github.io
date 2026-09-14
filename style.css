@@ -249,7 +249,7 @@ main p {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   text-align: justify;
 }
 
@@ -284,49 +284,42 @@ main p {
   padding: 10px 0;
 }
 
+.project-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  padding: 2px 0;
+}
+
 .research-title,
+.project-title,
 .project-item span {
   color: #0b3d91;
   font-weight: 700;
 }
 
+.project-title,
 .project-item span {
   display: block;
   width: 100%;
   line-height: 1.35;
 }
 
-.project-item > div {
-  font-size: 0.8rem;
-  line-height: 1.5;
-  color: #4b5563;
-  letter-spacing: 0.01em;
-  margin: 0;
-}
-
-.project-item > div:last-of-type {
-  font-size: 0.9rem;
-  color: #2c2f35;
-  line-height: 1.6;
-}
-
-.project-item p {
-  margin: 0;
-  text-align: justify;
-  line-height: 1.6;
-}
-
+.project-meta,
 .research-meta {
   color: #4b5563;
-  font-size: 0.92rem;
+  font-size: 0.8rem;
   margin-top: 2px;
 }
 
+.project-item p,
 .research-entry p {
   margin: 8px 0 0;
   max-width: 100%;
   text-align: justify;
-  font-size: 1rem;
+  font-size: 0.86rem;
 }
 
 .research-item a,
@@ -350,6 +343,7 @@ main p {
   margin-top: 2px;
   align-self: flex-start;
   text-decoration: none !important;
+  flex-shrink: 0;
 }
 
 .github-link:hover {
