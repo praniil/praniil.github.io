@@ -82,7 +82,6 @@
               <a href="https://github.com/Seg-Gen/SegSynth" target="_blank" rel="noopener">Code &amp; Checkpoints (GitHub)</a>
             </div>
             <ul class="publication-highlights">
-              <li><strong>Dataset and benchmark:</strong> Developed a six-class land-use segmentation benchmark covering 202.4 km² of Kathmandu Valley across 408 hand-annotated fine-resolution scenes, including predefined folds, metric records, and trained model checkpoints. The dataset is deposited on Zenodo and available by request.</li>
               <li><strong>Spatial evaluation:</strong> Compared U-Net, UNetFormer, SegFormer-B0, SegNeXt-T, and TC-SegFormer across 30 fold-runs. Sequence-block partitioning reduced mIoU by 0.051–0.095 compared with random splitting, demonstrating substantial spatial leakage.</li>
               <li><strong>Thin-structure segmentation:</strong> Developed TC-SegFormer by extending SegFormer-B0 with a half-resolution detail path, boundary-reliability reweighting, soft-clDice topology loss, and presence-balanced sampling. With only 1.9% more parameters, it improved mIoU by 0.053–0.111 across all six Kathmandu fold-runs.</li>
               <li><strong>Synthetic augmentation:</strong> Generated image–label pairs using mask diffusion and LoRA-adapted Stable Diffusion with class-channel ControlNet conditioning. Under matched compute, a 1:1 real–synthetic mixture reduced mIoU across all five architectures by 0.014 on average, with the largest losses affecting roads and rivers.</li>
@@ -96,6 +95,9 @@
             <div class="publication-venue">Zenodo</div>
             <div class="dataset-doi">DOI <a href="https://doi.org/10.5281/zenodo.22349064" target="_blank" rel="noopener">10.5281/zenodo.22349064</a></div>
             <a href="https://zenodo.org/records/22349064" target="_blank" rel="noopener" class="dataset-record-link">Zenodo Record</a>
+            <ul class="publication-highlights dataset-highlights">
+              <li><strong>Dataset and benchmark:</strong> Developed a six-class land-use segmentation benchmark covering 202.4 km² of Kathmandu Valley across 408 hand-annotated fine-resolution scenes, including predefined folds, metric records, and trained model checkpoints. The dataset is deposited on Zenodo and available by request.</li>
+            </ul>
           </article>
         </div>
       </section>
