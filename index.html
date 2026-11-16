@@ -15,7 +15,8 @@
       <nav aria-label="Primary navigation">
         <a href="#top" class="brand">Pranil Parajuli</a>
         <div class="nav-right">
-            <a href="#blogs" class="nav-button">Blogs</a>
+          <a href="#publications" class="nav-button">Publications</a>
+          <a href="#blogs" class="nav-button">Blogs</a>
           <a href="#research" class="nav-button">Research Experience</a>
           <a href="#projects" class="nav-button">Projects</a>
           <a href="Pranil_Parajuli_CV_Fall_2027_UCONN.pdf" target="_blank" rel="noopener" class="nav-button resume-button">Resume</a>
@@ -41,15 +42,46 @@
             <a href="https://huggingface.co/Pranilllllll" target="_blank" rel="noopener" aria-label="Hugging Face" class="icon-link">
               <img src="photos/hugging face.svg" alt="Hugging Face" class="icon" />&nbsp;Hugging Face
             </a>
+            <a href="https://orcid.org/0009-0008-7044-0585" target="_blank" rel="noopener" aria-label="ORCID profile" class="icon-link">
+              <img src="photos/orcid.svg" alt="ORCID" class="icon" />&nbsp;ORCID
+            </a>
           </div>
         </div>
 
         <p>
-            I recently completed by bachelor's degree in Computer Engineering (2026) from Thapathali Campus, IOE, Nepal. I am working as an AI ML engineer at Acaiberry Technologies. I am interested in Computer Vision, Generative AI (Diffusion Models), 3D modeling and Reinforcement Learning.
+            I recently completed my bachelor's degree in Computer Engineering (2026) from Thapathali Campus, IOE, Nepal. I am working as an AI ML engineer at Acaiberry Technologies. I am interested in Computer Vision, Generative AI (Diffusion Models), 3D modeling and Reinforcement Learning.
         </p>
       </section>
 
-       <section id="blogs">
+      <section id="publications">
+        <h2>Publications</h2>
+        <div class="publication-list">
+          <article class="publication-entry">
+            <div class="publication-header">
+              <span class="publication-title">Fine-resolution land-use segmentation and synthetic image–label augmentation in the Kathmandu Valley</span>
+              <span class="publication-year">2026</span>
+            </div>
+            <div class="publication-authors">
+              Pranil Parajuli<sup>*</sup>, Sugam Dahal<sup>*</sup>, Kiran Chandra Dahal <span class="equal-contribution">(<sup>*</sup>Equal contribution)</span>
+            </div>
+            <div class="publication-links" aria-label="Publication resources">
+              <a href="https://arxiv.org/pdf/2611.10847" target="_blank" rel="noopener">Paper (arXiv)</a>
+              <span aria-hidden="true">|</span>
+              <a href="https://github.com/Seg-Gen/SegSynth" target="_blank" rel="noopener">Code &amp; Checkpoints (GitHub)</a>
+              <span aria-hidden="true">|</span>
+              <a href="https://zenodo.org/records/22349064" target="_blank" rel="noopener">Dataset (Zenodo)</a>
+            </div>
+            <ul class="publication-highlights">
+              <li><strong>Dataset and benchmark:</strong> Developed a six-class land-use segmentation benchmark covering 202.4 km² of Kathmandu Valley across 408 hand-annotated fine-resolution scenes, including predefined folds, metric records, and trained model checkpoints. The dataset is deposited on Zenodo and available by request.</li>
+              <li><strong>Spatial evaluation:</strong> Compared U-Net, UNetFormer, SegFormer-B0, SegNeXt-T, and TC-SegFormer across 30 fold-runs. Sequence-block partitioning reduced mIoU by 0.051–0.095 compared with random splitting, demonstrating substantial spatial leakage.</li>
+              <li><strong>Thin-structure segmentation:</strong> Developed TC-SegFormer by extending SegFormer-B0 with a half-resolution detail path, boundary-reliability reweighting, soft-clDice topology loss, and presence-balanced sampling. With only 1.9% more parameters, it improved mIoU by 0.053–0.111 across all six Kathmandu fold-runs.</li>
+              <li><strong>Synthetic augmentation:</strong> Generated image–label pairs using mask diffusion and LoRA-adapted Stable Diffusion with class-channel ControlNet conditioning. Under matched compute, a 1:1 real–synthetic mixture reduced mIoU across all five architectures by 0.014 on average, with the largest losses affecting roads and rivers.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="blogs">
         <h2>Blogs</h2>
         <div class="project-list">
           <div class="project-item">
