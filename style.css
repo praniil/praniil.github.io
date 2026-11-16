@@ -302,7 +302,10 @@ main p {
 }
 
 .equal-contribution {
-  white-space: nowrap;
+  margin-top: 1px;
+  color: #6b7280;
+  font-size: 0.78rem;
+  font-style: italic;
 }
 
 .publication-links {
