@@ -222,6 +222,23 @@ p {
   padding: 0;
 }
 
+#projects .project-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 34px;
+  row-gap: 22px;
+  align-items: start;
+}
+
+#projects .project-item {
+  min-width: 0;
+}
+
+#projects .project-item:nth-child(n + 3) {
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
 .research-header,
 .project-item-header,
 .publication-header {
@@ -411,6 +428,21 @@ footer {
 
   main > section:not(:first-child) {
     padding-top: 24px;
+  }
+
+  #projects .project-list {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  #projects .project-item {
+    padding: 20px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  #projects .project-item:first-child {
+    padding-top: 0;
+    border-top: 0;
   }
 
 }
