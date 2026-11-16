@@ -28,7 +28,7 @@
       <section id="about" class="profile-section">
         <div class="intro-row">
           <img src="photos/my_image.jpeg" alt="Pranil Parajuli" class="profile-photo" />
-          <h2>Pranil Parajuli</h2>
+          <h1>Pranil Parajuli</h1>
           <div class="social-links">
             <a href="mailto:pparajuli15@gmail.com" target="_blank" rel="noopener" aria-label="Email" class="icon-link">
               <img src="photos/gmail-icon-logo.svg" alt="Email" class="icon" />&nbsp;Gmail
@@ -70,10 +70,8 @@
         <h2>Publications</h2>
         <div class="publication-list">
           <article class="publication-entry">
-            <div class="publication-header">
-              <span class="publication-title">Fine-resolution land-use segmentation and synthetic image–label augmentation in the Kathmandu Valley</span>
-              <span class="publication-year">2026</span>
-            </div>
+            <div class="publication-kicker">Paper · 2026</div>
+            <div class="publication-title">Fine-resolution land-use segmentation and synthetic image–label augmentation in the Kathmandu Valley</div>
             <div class="publication-authors">
               <strong>Pranil Parajuli</strong><sup>*</sup>, Sugam Dahal<sup>*</sup>, Kiran Chandra Dahal
             </div>
@@ -82,8 +80,6 @@
               <a href="https://arxiv.org/pdf/2611.10847" target="_blank" rel="noopener">Paper (arXiv)</a>
               <span aria-hidden="true">|</span>
               <a href="https://github.com/Seg-Gen/SegSynth" target="_blank" rel="noopener">Code &amp; Checkpoints (GitHub)</a>
-              <span aria-hidden="true">|</span>
-              <a href="https://zenodo.org/records/22349064" target="_blank" rel="noopener">Dataset (Zenodo)</a>
             </div>
             <ul class="publication-highlights">
               <li><strong>Dataset and benchmark:</strong> Developed a six-class land-use segmentation benchmark covering 202.4 km² of Kathmandu Valley across 408 hand-annotated fine-resolution scenes, including predefined folds, metric records, and trained model checkpoints. The dataset is deposited on Zenodo and available by request.</li>
@@ -91,6 +87,15 @@
               <li><strong>Thin-structure segmentation:</strong> Developed TC-SegFormer by extending SegFormer-B0 with a half-resolution detail path, boundary-reliability reweighting, soft-clDice topology loss, and presence-balanced sampling. With only 1.9% more parameters, it improved mIoU by 0.053–0.111 across all six Kathmandu fold-runs.</li>
               <li><strong>Synthetic augmentation:</strong> Generated image–label pairs using mask diffusion and LoRA-adapted Stable Diffusion with class-channel ControlNet conditioning. Under matched compute, a 1:1 real–synthetic mixture reduced mIoU across all five architectures by 0.014 on average, with the largest losses affecting roads and rivers.</li>
             </ul>
+          </article>
+
+          <article class="publication-entry dataset-entry">
+            <div class="publication-kicker">Dataset · 2026</div>
+            <div class="publication-title">Kathmandu Valley Land-Use and Land-Cover Segmentation Dataset (Version 1)</div>
+            <div class="publication-authors"><strong>P. Parajuli</strong> and S. Dahal</div>
+            <div class="publication-venue">Zenodo</div>
+            <div class="dataset-doi">DOI <a href="https://doi.org/10.5281/zenodo.22349064" target="_blank" rel="noopener">10.5281/zenodo.22349064</a></div>
+            <a href="https://zenodo.org/records/22349064" target="_blank" rel="noopener" class="dataset-record-link">Zenodo Record</a>
           </article>
         </div>
       </section>
